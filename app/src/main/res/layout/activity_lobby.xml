@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.kent.letshare.LobbyActivity"
+    android:background="@drawable/lobby_bg">
+
+    <EditText
+        android:id="@+id/conn_name_txt"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="245dp"
+        android:background="#38000000"
+        android:drawableLeft="@mipmap/ic_person"
+        android:ems="10"
+        android:hint="請輸入分享對象帳號"
+        android:inputType="textPersonName" />
+
+    <ImageButton
+        android:id="@+id/search_btn"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignBottom="@+id/conn_name_txt"
+        android:layout_alignEnd="@+id/conn_name_txt"
+        android:layout_alignRight="@+id/conn_name_txt"
+        android:background="@drawable/gray_btn"
+        android:onClick="Search"
+        app:srcCompat="@drawable/ic_search" />
+
+</RelativeLayout>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="320dp"
+    android:layout_height="300dp"
+    android:layout_gravity="center"
+    android:background="@drawable/gradient">
+
+    <TextView
+        android:id="@+id/from_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="23dp"
+        android:text="來自"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/inviter_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/from_txt"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="14dp"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/respMsg_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:text="的螢幕分享邀請"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/respTrue_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="32dp"
+        android:layout_marginLeft="11dp"
+        android:layout_marginStart="11dp"
+        android:layout_toEndOf="@+id/from_txt"
+        android:layout_toRightOf="@+id/from_txt"
+        android:background="@drawable/blue_btn"
+        android:text="接受"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/respFalse_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/respTrue_btn"
+        android:layout_alignBottom="@+id/respTrue_btn"
+        android:layout_toLeftOf="@+id/from_txt"
+        android:layout_toStartOf="@+id/from_txt"
+        android:background="@drawable/blue_btn"
+        android:text="拒絕"
+        android:textStyle="bold" />
+</RelativeLayout>

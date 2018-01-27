@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/friends"
+    tools:context="com.example.kent.letshare.RegisterActivity">
+
+    <ImageView
+        android:id="@+id/regBg_img"
+        android:layout_width="350dp"
+        android:layout_height="430dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="92dp"
+        android:background="@drawable/bg_panel" />
+
+    <TextView
+        android:id="@+id/regTitle_lbl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/regBg_img"
+        android:layout_alignStart="@+id/regBg_img"
+        android:layout_alignTop="@+id/regBg_img"
+        android:layout_marginLeft="12dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="11dp"
+        android:text="Let's Share!"
+        android:textColor="#898989"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/regDes_lbl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/regTitle_lbl"
+        android:layout_alignStart="@+id/regTitle_lbl"
+        android:layout_below="@+id/regTitle_lbl"
+        android:text="Just a few steps for you to sign up for free."
+        android:textColor="#898989" />
+
+    <EditText
+        android:id="@+id/regAcc_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/regDes_lbl"
+        android:layout_alignRight="@+id/regDes_lbl"
+        android:layout_below="@+id/regDes_lbl"
+        android:layout_marginTop="57dp"
+        android:drawableLeft="@drawable/account"
+        android:ems="10"
+        android:hint="Account"
+        android:inputType="textPersonName"
+        android:textColorHint="#ffffff" />
+
+    <EditText
+        android:id="@+id/regPass_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/regAcc_txt"
+        android:layout_alignStart="@+id/regAcc_txt"
+        android:layout_below="@+id/regAcc_txt"
+        android:drawableLeft="@drawable/password"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:textColorHint="#ffffff" />
+
+    <EditText
+        android:id="@+id/regName_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/regPass_txt"
+        android:layout_alignStart="@+id/regPass_txt"
+        android:layout_below="@+id/regPass_txt"
+        android:drawableLeft="@drawable/adb"
+        android:ems="10"
+        android:hint="Name"
+        android:inputType="textPersonName"
+        android:textColorHint="#ffffff" />
+
+    <Button
+        android:id="@+id/reg_btn"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/regCancel_btn"
+        android:layout_alignStart="@+id/regCancel_btn"
+        android:layout_below="@+id/regName_txt"
+        android:layout_marginTop="38dp"
+        android:background="@drawable/green_btn"
+        android:onClick="Register"
+        android:text="Sign up"
+        android:textAllCaps="false" />
+
+    <Button
+        android:id="@+id/regCancel_btn"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/regBg_img"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="9dp"
+        android:background="@drawable/blue_btn"
+        android:onClick="Cancel"
+        android:text="Cancel"
+        android:textAllCaps="false" />
+
+</RelativeLayout>
